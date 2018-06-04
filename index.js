@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }))
 app.get('/', (req, res) => {
-    res.send("Vào coi link đừng nghịch linh tinh nhé .. https://fb.me/co.dong.94 ^_^")
+    res.send("Vào coi link đừng nghịch linh tinh nhé   ^_^")
 })
 app.get('/ShowTokeN', (req, res) => {
     res.json(log_access)
