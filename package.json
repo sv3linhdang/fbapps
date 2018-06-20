@@ -11,8 +11,8 @@
     "body-parser": "*"
   },
   "engines": {
-    "node": "4.1.1",
-    "npm": "4.0.2"
+    "node": "4.6.1",
+    "npm": "2.15.9"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,7 @@
   ],
   "author": "Mark Pundsack",
   "contributors": [
-    "_Neiht <tdthien9d@gmail.com>"
+    "_Neiht "
   ],
   "license": "MIT"
 }
