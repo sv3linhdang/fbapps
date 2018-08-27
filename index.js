@@ -247,7 +247,7 @@ function AutoCmt(ID, message, TOKEN){
 function in_array(needle, haystack){
     return haystack.indexOf(needle) !== -1;
 }
-var port = process.env.PORT || 3000,
+var port = process.env.PORT || 8080,
     ip   = process.env.IP   || '0.0.0.0';
 app.listen(port, ip);
 console.log('Server running on http://%s:%s', ip, port);
